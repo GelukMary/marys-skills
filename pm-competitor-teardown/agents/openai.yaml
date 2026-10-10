@@ -1,0 +1,4 @@
+interface:
+  display_name: "PM Competitor Teardown"
+  short_description: "面向C端订阅/AI产品的竞品拆解SOP，含证据分级、商业化对标与缝隙评分卡"
+  default_prompt: "使用 -competitor-teardown 拆解这几个竞品并给出缝隙评分"

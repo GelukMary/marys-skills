@@ -1,0 +1,4 @@
+interface:
+  display_name: "AB Review"
+  short_description: "AB 实验复盘助手，检查指标口径、显著性、样本量与结论可信度"
+  default_prompt: "帮我复盘这个 AB 实验"

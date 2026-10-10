@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD Writer"
+  short_description: "撰写与评审可落地的 PRD：指标可实现、埋点可对账、待定项闭环、评审留痕"
+  default_prompt: "使用 -writer 帮我写一份 PRD"

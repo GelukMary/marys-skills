@@ -1,0 +1,4 @@
+interface:
+  display_name: "Resume Audit"
+  short_description: "校招产品/商业化简历的口径审计、JD匹配与改写建议，含数字自检清单"
+  default_prompt: "使用 -audit 帮我审一遍简历"

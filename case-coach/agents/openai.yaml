@@ -1,0 +1,4 @@
+interface:
+  display_name: "Case Coach"
+  short_description: "商业化产品与产品经理面试的 case 陪练与回答复盘（含评分与改进建议）"
+  default_prompt: "帮我练习一道商业化产品 case"
