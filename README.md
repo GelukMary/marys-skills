@@ -14,12 +14,12 @@
 
 |  | Skill | 一句话 | 依赖 |
 |---|---|---|---|
-| 🎤 | [case-coach](#case-coach面试-case-陪练) | 产品面试 case 陪练 | 无 |
-| 📊 | [ab-experiment-review](#ab-experiment-reviewab-实验复盘) | AB 实验复盘 | Python 3 |
-| 📄 | [resume-audit](#resume-audit简历改写) | 简历改写 | 无 |
-| 📝 | [prd-writer](#prd-writerprd-prd撰写) | PRD 撰写 | 无 |
-| 🔍 | [market-research](#market-research市场调研) | 市场调研 | 无 |
-| 🧭 | [pm-competitor-teardown](#pm-competitor-teardown竞品分析) | 竞品分析| Python 3 |
+| [case-coach](#case-coach面试-case-陪练) | 产品面试 case 陪练 | 无 |
+| [ab-experiment-review](#ab-experiment-reviewab-实验复盘) | AB 实验复盘 | Python 3 |
+| [resume-audit](#resume-audit简历改写) | 简历改写 | 无 |
+| [prd-writer](#prd-writerprd-prd撰写) | PRD 撰写 | 无 |
+| [market-research](#market-research市场调研) | 市场调研 | 无 |
+| [pm-competitor-teardown](#pm-competitor-teardown竞品分析) | 竞品分析| Python 3 |
 
 两条链路：
 
@@ -72,11 +72,11 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 收入下滑 30% 怎么分析
 ```
 
-产出：评分 + 漏洞 + 追问清单。依赖：无。
+产出：评分 + 问题点 + 追问。依赖：无。
 
 ### ab-experiment-review（AB 实验复盘）
 
-复盘 AB 实验：检查口径（相对还是百分点、基线、分母）、样本量、护栏指标与外部事件，判断结论能不能全量。附带两比例显著性脚本 `scripts/significance_check.py`。
+复盘 AB 实验：检查口径（相对还是百分点、基线、分母）、样本量、护栏指标与外部事件，判断结论能不能全量。 `scripts/significance_check.py`。
 
 ```text
 复盘这次定价实验
@@ -84,11 +84,10 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 埋点支付成功和 ODS 订单对不上
 ```
 
-产出：复盘卡片 + 可信度评分 + 补实验建议。依赖：Python 3。
 
 ### resume-audit（简历审校）
 
-对着目标 JD 审简历：检查量化口径、个人贡献、项目角色一致性，给出改写示例和面试追问清单。改 docx 后要重新渲染验证版式。
+对着目标 JD 审简历：提取目标JD关键词-追问简历中的数据与项目角色-给出改写示例-给出面试追问清单。改 docx 后要重新渲染验证版式。
 
 ```text
 帮我改简历
@@ -96,19 +95,20 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 这条 bullet 怎么写
 ```
 
-产出：审计清单 + 改写示例 + 追问清单。依赖：无。
 
 ### prd-writer（PRD 撰写与评审）
 
-写与评审可落地 PRD：数值三件套（默认值 / 是否远程配置 / 生效层级）、指标与埋点对账、待定项闭环、评审回填。禁用"适当增加"这类模糊词。
+写与评审可落地 PRD，支持两种骨架：功能模块型（需求名称 / 业务流程 / 原型 / 界面交互 / 埋点 / 特殊场景）和规格定义型（数值体系、接口口径）。数值必须给公式或逐级数表；每个参数带三件套（默认值 / 是否远程配置 / 生效层级）；指标与埋点逐条对账；待定项用 🔵 标记并集中汇总，拍板后回填；交付前跑自检清单。
 
 ```text
 帮我写这个功能的 PRD
-评审这份 PRD
+写一份数值体系 PRD
+评审这份 PRD，看看能不能开发
+评审后帮我更新 PRD，升版本并记修订
 埋点怎么对账
 ```
+产出：PRD 文档 + 埋点对账表 + 待拍板项 + 修订记录。
 
-产出：PRD + 埋点对账表 + 待定项清单。依赖：无。
 
 ### market-research（市场与用户调研）
 
@@ -120,11 +120,10 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 把这个竞品研究整理成结论先行的报告
 ```
 
-产出：结论先行的报告 + 证据链 + 不确定性说明。依赖：无。
 
 ### pm-competitor-teardown（竞品拆解）
 
-面向 C 端订阅 / AI 产品的竞品拆解 SOP，默认 URL 驱动：用户给网址或粘贴材料，一次性批量抓取，读不到就标"未获取"。商业化拆解覆盖付费墙、套餐与默认项、地区定价、单位经济代理；AI 功能按效果 / 成本 / 性能 / 付费意愿四维评分；缝隙用评分卡，低于阈值不写进结论。
+面向 商业化 / AI 产品的竞品拆解 SOP：抓取用户提供的网址或粘贴材料-按维度拆解竞品-评分-按评分判定优化点-输出结论
 
 ```text
 拆解这几个竞品
@@ -132,7 +131,6 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 AI 功能值不值得做
 ```
 
-产出：对标矩阵 + 缝隙评分卡 + 验证计划 + 来源账本。依赖：Python 3 + 自备来源 URL。
 
 ```bash
 python scripts/fetch_sources.py --urls urls.txt --out sources
