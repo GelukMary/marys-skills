@@ -62,7 +62,7 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 
 ## Skills
 
-### case-coach（面试 case 陪练）
+### ⭐case-coach（面试 case 陪练）
 
 把商业化/产品面试 case 练成结构化表达：先给框架让你答一轮，再按六维评分，指出关键漏洞和面试官会追问的点。练题模式先要口径、再给反馈。
 
@@ -74,7 +74,7 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 
 产出：评分 + 问题点 + 追问。依赖：无。
 
-### ab-experiment-review（AB 实验复盘）
+### ⭐ab-experiment-review（AB 实验复盘）
 
 复盘 AB 实验：检查口径（相对还是百分点、基线、分母）、样本量、护栏指标与外部事件，判断结论能不能全量。 `scripts/significance_check.py`。
 
@@ -85,7 +85,7 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 ```
 
 
-### resume-audit（简历审校）
+### ⭐resume-audit（简历审校）
 
 对着目标 JD 审简历：提取目标JD关键词-追问简历中的数据与项目角色-给出改写示例-给出面试追问清单。改 docx 后要重新渲染验证版式。
 
@@ -96,7 +96,7 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 ```
 
 
-### prd-writer（PRD 撰写与评审）
+### ⭐prd-writer（PRD 撰写与评审）
 
 写与评审可落地 PRD，支持两种骨架：功能模块型（需求名称 / 业务流程 / 原型 / 界面交互 / 埋点 / 特殊场景）和规格定义型（数值体系、接口口径）。数值必须给公式或逐级数表；每个参数带三件套（默认值 / 是否远程配置 / 生效层级）；指标与埋点逐条对账；待定项用 🔵 标记并集中汇总，拍板后回填；交付前跑自检清单。
 
@@ -110,7 +110,7 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 产出：PRD 文档 + 埋点对账表 + 待拍板项 + 修订记录。
 
 
-### market-research（市场与用户调研）
+### ⭐market-research（市场与用户调研）
 
 先立假设再用证据打靶：每条数据标注来源、时间、口径，区分实测 / 统计 / 推断；n=1 就写 n=1。交付前主动写"什么证据会推翻结论"。
 
@@ -121,7 +121,7 @@ mklink /D "%USERPROFILE%\.codex\skills\case-coach" "%USERPROFILE%\marys-skills\c
 ```
 
 
-### pm-competitor-teardown（竞品拆解）
+### ⭐pm-competitor-teardown（竞品拆解）
 
 面向 商业化 / AI 产品的竞品拆解 SOP：抓取用户提供的网址或粘贴材料-按维度拆解竞品-评分-按评分判定优化点-输出结论
 
